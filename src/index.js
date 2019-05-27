@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 
-import AppLang from './lang-context/AppLang';
+import Blog from './Blog/Blog';
 
 ReactDOM.render(
-  <AppLang />,
+  <BrowserRouter> 
+    <Blog/> 
+  </BrowserRouter>,
   document.getElementById('root')
 );
